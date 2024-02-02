@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import LogoImg from '../assets/img/logo-img.jpg';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,26 +11,30 @@ const Header = () => {
   ];
 
   return (
-    <div className='fixed top-0 left-0 w-full shadow-md bg-custom-light shadow-custom-green/50 font-Montserrat'>
-      <div className='flex justify-between items-center m-4'>
+    <div className='fixed top-0 left-0 w-full shadow-md bg-custom-light shadow-custom-green/50 font-Montserrat z-[100]'>
+      <div className='flex items-center justify-between m-4'>
         <div>
           <a href="/" className='flex items-center space-x-4'>
-            {/* <img className='h-10 w-20' src={LogoImg} alt="Logo" /> */}
-            <h1 className='font-Montez text-4xl text-custom-green'>Konnect Global</h1>
+            {/* <img className='w-20 h-10' src={LogoImg} alt="Logo" /> */}
+            <h1 className='text-4xl font-Montez text-custom-green'>Konnect Global</h1>
           </a>
         </div>
 
         <div className='hidden md:flex'>
           <ul className='flex space-x-5'>
             {navLinks.map((navLink) => (
-              <li className='hover:text-custom-green transition-all duration-500' key={navLink.name}>
+              <li className='transition-all duration-500 hover:text-custom-green' key={navLink.name}>
                 <a href={navLink.link}>{navLink.name}</a>
               </li>
             ))}
           </ul>
         </div>
 
-        <button className='hidden md:flex items-center justify-center bg-custom-green text-custom-light w-32 h-10 my-2 transition-all duration-500 hover:bg-custom-light hover:text-custom-green hover:border-2 hover:border-custom-green'>Get a Quote</button>
+        <span className='items-center justify-center hidden my-2 space-x-5 text-2xl transition-all duration-500 md:flex'>
+          <a href="/"><i className="fa-solid fa-envelope text-custom-green"></i></a>
+          <a href="/"><i className="fa-solid fa-phone-volume text-custom-green"></i></a>
+          <a href="/"><i class="fa-brands fa-facebook text-custom-green"></i></a>
+        </span>
 
         <span onClick={() => setIsOpen(prev => !prev)} className='transition-all duration-300 ease-in-out md:hidden hover:cursor-pointer hover:text-custom-green/90'>
           <i className={`fa-xl fa-solid ${isOpen ? 'fa-xmark' : 'fa-bars'}`}></i>
@@ -42,16 +45,19 @@ const Header = () => {
         <div className=''>
           <ul className=''>
             {navLinks.map((link) => (
-              <li className='my-2 hover:text-custom-green transition-all duration-500'>
+              <li className='my-2 transition-all duration-500 hover:text-custom-green' key={link.name}>
                 <a href={link.link}>{link.name}</a>
               </li>
             ))}
           </ul>
 
           <div>
-            {/* social icons here */}
 
-            <button className='bg-custom-green text-custom-light w-32 h-10 my-2 mb-10 transition-all duration-500 hover:bg-custom-light hover:text-custom-green hover:border-2 hover:border-custom-green'>Get a Quote</button>
+            <span className='flex items-center mt-5 mb-10 space-x-5 text-2xl transition-all duration-500 '>
+              <a href="/"><i className="fa-solid fa-envelope text-custom-green"></i></a>
+              <a href="/"><i className="fa-solid fa-phone-volume text-custom-green"></i></a>
+              <a href="/"><i class="fa-brands fa-facebook text-custom-green"></i></a>
+            </span>
           </div>
         </div>
       </div>
