@@ -1,8 +1,10 @@
 import React from 'react';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className='h-auto py-8 md:px-0 pl-5 text-white bg-[#0c1239]/85 md:mb-0 font-Montserrat'>
+    <footer className='h-auto pt-8 md:px-0 pl-5 text-white bg-[#0c1239]/90 md:mb-0 font-Montserrat'>
       <div className="flex flex-col w-full m-auto text-sm md:items-center md:justify-center">
         <p className="text-4xl font-bold font-Montez">Konnect <span className='text-custom-green'>Global</span></p>
 
@@ -27,6 +29,8 @@ const Footer = () => {
             <p>17 Wespan Avenue, St. Lucia</p>
           </a>
         </span>
+
+        <div className='items-center text-xs w-full h-10 py-3 text-center bg-[#0c1239]'>Copyright &copy; {currentYear} KonnectGlobal, All Rights Reserved</div>
       </div>
     </footer>
   )
