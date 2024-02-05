@@ -24,8 +24,8 @@ const BackgroundImageSlider = () => {
 
   return (
     <>
-      <div className='h-screen overflow-hidden font-Montserrat'>
-        <img src={images[currentImageIndex]} className='object-cover w-full h-full' alt="" />
+      <div className='overflow-hidden h-[430px] md:h-screen font-Montserrat'>
+        <img src={images[currentImageIndex]} className='object-cover w-full h-full md:h-full' alt="" />
 
         <div className="absolute w-[300px] flex flex-col h-72 gap-5 md:gap-10 m-auto text-white transform -translate-x-1/2 -translate-y-1/2 md:w-[650px] items-start p-5 bg-black/30 top-1/2 left-1/2">
           <h1 className='text-3xl font-bold uppercase md:text-5xl'>{texts[currentImageIndex].h1}</h1>
