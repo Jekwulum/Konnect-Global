@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import BackgroundImageSlider from '../../components/BackgroundImageSlider';
 
 import planeImg from '../../assets/img/plane.jpg';
@@ -39,7 +40,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='bg-[#b8655f] font-Montserrat text-custom-light pb-10'>
+        <div className='bg-[#0c1239] font-Montserrat text-custom-light pb-10'>
 
           <div className='flex flex-col justify-between p-10 pt-20 md:space-x-5 md:flex-row'>
             <h1 className='text-3xl font-bold uppercase'>Our special services</h1>
@@ -103,12 +104,15 @@ const Home = () => {
           </div>
         </div>
 
-        <section style={{ backgroundImage: `url(${planeImg})`, backgroundSize: 'cover' }} className='md:w-full h-[750px] text-center m-auto flex justify-center items-center img-bg1'>
-          <p className='text-white'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate ut iste autem odit temporibus earum debitis tenetur ipsa quo animi!</p>
-        </section>
+        <div style={{ backgroundImage: `url(${planeImg})` }} className='flex items-center justify-center m-auto text-center img-bg font-Montserrat'>
+          <div className='bg-[#0c1239]/85 w-full h-full m-auto text-center items-center flex justify-center flex-col'>
+            <p className='px-8 text-2xl text-white md:px-32'>
+              Konnect Global stands as a premier global provider of transport and logistics solutions, offering seamless connectivity and innovative services to enhance supply chain efficiency for businesses across the globe.</p>
+          </div>
+        </div>
 
-        <div className='flex flex-col justify-between w-auto px-10 m-auto mb-10 md:mt-10 md:flex-row font-Montserrat'>
-          <div className='p-5 '>
+        <div className='flex flex-col justify-center w-auto px-10 m-auto mb-10 md:space-x-5 md:mt-10 md:flex-row font-Montserrat'>
+          <div className='p-5'>
 
             <div>
               <h1 className='text-4xl uppercase'>Why Choose us?</h1>
@@ -160,7 +164,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className='bg-[#b8655f]/30 w-full p-5'>
+          <div className='bg-[#0c1239]/20 w-full p-5 m-auto'>
             <div>
               <h1 className='text-xl uppercase md:text-4xl'>Leave us a message</h1>
               <div className='w-16 h-[2px] mt-2 md:mt-5 bg-custom-green'></div>
@@ -178,9 +182,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-
-        <footer className='mb-96 md:hidden'></footer>
       </div>
+
+      <Footer />
     </div>
   )
 }
