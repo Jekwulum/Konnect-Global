@@ -24,6 +24,7 @@ const About = () => {
 
             <p className='mt-5 mb-3'>
               KonnectGlobal is the driving force behind global logistics. With an unwavering dedication to excellence, efficiency, and reliability, we adeptly navigate the intricacies of transportation to provide seamless solutions for businesses across the globe. Our team embodies unparalleled expertise, unwavering dedication, and an unyielding determination to surpass expectations.
+              
               <p className='mt-2'>We ensure that every shipment, every client, and every milestone is met with utmost precision and meticulous care.</p>
             </p>
 
