@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import BackgroundImageSlider from '../../components/BackgroundImageSlider';
+import BackgroundImageSlider from './BackgroundImageSlider';
 
 import planeImg from '../../assets/img/plane.jpg';
 
@@ -40,7 +40,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='bg-[#0c1239] font-Montserrat text-custom-light pb-10'>
+        <div className='pb-10 bg-custom-blue font-Montserrat text-custom-light'>
 
           <div className='flex flex-col justify-between p-10 pt-20 md:space-x-5 md:flex-row'>
             <h1 className='text-3xl font-bold uppercase'>Our special services</h1>
@@ -105,7 +105,7 @@ const Home = () => {
         </div>
 
         <div style={{ backgroundImage: `url(${planeImg})` }} className='flex items-center justify-center m-auto text-center img-bg font-Montserrat'>
-          <p className='flex h-full bg-[#0c1239]/85 items-center w-full px-8 text-xs text-center text-white md:text-2xl md:px-32'>
+          <p className='flex items-center w-full h-full px-8 text-xs text-center text-white bg-custom-blue/85 md:text-2xl md:px-32'>
             Konnect Global stands as a premier global provider of transport and logistics solutions, offering seamless connectivity and innovative services to enhance supply chain efficiency for businesses across the globe.</p>
         </div>
 
@@ -162,7 +162,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className='bg-[#0c1239]/20 w-full p-5 m-auto'>
+          <div className='w-full p-5 m-auto bg-custom-blue/20'>
             <div>
               <h1 className='text-xl uppercase md:text-4xl'>Leave us a message</h1>
               <div className='w-16 h-[2px] mt-2 md:mt-5 bg-custom-green'></div>

@@ -8,12 +8,14 @@ module.exports = {
       colors: {
         "custom-bgColor": "#E6E8E6",
         "custom-green": "#013D1E",
-        "custom-light": "#FFFFFF"
+        "custom-light": "#FFFFFF",
+        "custom-blue": "#0C1239",
       },
     },
     fontFamily: {
       Montserrat: ['Montserrat', 'sans-serif'],
       Montez: ['Montez', 'cursive'],
+      GreatVibes: ['Great Vibes', 'cursive'],
       // Lato: ['Lato', 'sans-serif'],
     }
   },

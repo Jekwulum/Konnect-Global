@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import bg1 from '../assets/img/bg-1.jpg';
-import bg2 from '../assets/img/bg-2.jpg';
-import bg3 from '../assets/img/bg-3.jpg';
+import bg1 from '../../assets/img/bg-1.jpg';
+import bg2 from '../../assets/img/bg-2.jpg';
+import bg3 from '../../assets/img/bg-3.jpg';
 
 const BackgroundImageSlider = () => {
   const navigate = useNavigate();

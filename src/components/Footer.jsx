@@ -2,17 +2,22 @@ import React from 'react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const navLinks = [
+    { name: 'Home', link: '/' },
+    { name: 'Services', link: '/services' },
+    { name: 'About', link: '/about' },
+    { name: 'Contact', link: '/contact' },
+  ];
 
   return (
-    <footer className='h-auto pt-8 md:px-0 pl-5 text-white bg-[#0c1239]/90 md:mb-0 font-Montserrat'>
-      <div className="flex flex-col w-full m-auto text-sm md:items-center md:justify-center">
+    <footer className='h-auto pt-8 md:px-0 text-white bg-custom-blue/90 md:mb-0 font-Montserrat'>
+      <div className="flex flex-col w-full pl-5 m-auto text-sm md:items-center md:justify-center">
         <p className="text-4xl font-bold font-Montez">Konnect <span className='text-custom-green'>Global</span></p>
 
         <div className="flex my-3 space-x-4 text-xs md:text-lg">
-          <a href="/" className="transition-all duration-500 ease-in-out hover:text-custom-green">Home</a>
-          <a href="/" className="transition-all duration-500 ease-in-out hover:text-custom-green">Services</a>
-          <a href="/" className="transition-all duration-500 ease-in-out hover:text-custom-green">About Us</a>
-          <a href="/" className="transition-all duration-500 ease-in-out hover:text-custom-green">Contact</a>
+          {navLinks.map(navLink => (
+            <a href={navLink.link} className='transition-all duration-500 ease-in-out hover:text-custom-green'>{navLink.name}</a>
+          ))}
         </div>
 
         <span className='flex flex-col justify-center my-2 space-y-2 text-xs md:items-center md:space-x-10 md:flex-row'>
@@ -29,9 +34,9 @@ const Footer = () => {
             <p>17 Wespan Avenue, St. Lucia</p>
           </a>
         </span>
-
-        <div className='items-center text-xs w-full h-10 py-3 text-center bg-[#0c1239]'>Copyright &copy; {currentYear} KonnectGlobal, All Rights Reserved</div>
       </div>
+      
+      <div className='items-center text-xs w-full h-10 py-3 text-center bg-custom-blue'>Copyright &copy; {currentYear} KonnectGlobal, All Rights Reserved</div>
     </footer>
   )
 }
