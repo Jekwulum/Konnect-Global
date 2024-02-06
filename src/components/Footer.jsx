@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,13 +11,13 @@ const Footer = () => {
   ];
 
   return (
-    <footer className='h-auto pt-8 md:px-0 text-white bg-custom-blue/90 md:mb-0 font-Montserrat'>
+    <footer className='h-auto pt-8 text-white md:px-0 bg-custom-blue/90 md:mb-0 font-Montserrat'>
       <div className="flex flex-col w-full pl-5 m-auto text-sm md:items-center md:justify-center">
         <p className="text-4xl font-bold font-Montez">Konnect <span className='text-custom-green'>Global</span></p>
 
         <div className="flex my-3 space-x-4 text-xs md:text-lg">
           {navLinks.map(navLink => (
-            <a href={navLink.link} className='transition-all duration-500 ease-in-out hover:text-custom-green'>{navLink.name}</a>
+            <NavLink to={navLink.link} className='transition-all duration-500 ease-in-out hover:text-custom-green'>{navLink.name}</NavLink>
           ))}
         </div>
 
@@ -36,7 +37,7 @@ const Footer = () => {
         </span>
       </div>
       
-      <div className='items-center text-xs w-full h-10 py-3 text-center bg-custom-blue'>Copyright &copy; {currentYear} KonnectGlobal, All Rights Reserved</div>
+      <div className='items-center w-full h-10 py-3 text-xs text-center bg-custom-blue'>Copyright &copy; {currentYear} KonnectGlobal, All Rights Reserved</div>
     </footer>
   )
 }

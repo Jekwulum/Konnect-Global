@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,17 +15,17 @@ const Header = () => {
     <div className='fixed top-0 left-0 w-full shadow-md bg-custom-light shadow-custom-green/50 font-Montserrat z-[100]'>
       <div className='flex items-center justify-between m-4'>
         <div>
-          <a href="/" className='flex items-center space-x-4'>
+          <NavLink to="/" className='flex items-center space-x-4'>
             {/* <img className='w-20 h-10' src={LogoImg} alt="Logo" /> */}
             <h1 className='text-4xl font-Montez text-custom-green'>Konnect Global</h1>
-          </a>
+          </NavLink>
         </div>
 
         <div className='hidden md:flex'>
           <ul className='flex space-x-5'>
             {navLinks.map((navLink) => (
               <li className='transition-all duration-500 hover:text-custom-green' key={navLink.name}>
-                <a href={navLink.link}>{navLink.name}</a>
+                <NavLink to={navLink.link}>{navLink.name}</NavLink>
               </li>
             ))}
           </ul>
@@ -46,7 +47,7 @@ const Header = () => {
           <ul className=''>
             {navLinks.map((link) => (
               <li className='my-2 transition-all duration-500 hover:text-custom-green' key={link.name}>
-                <a href={link.link}>{link.name}</a>
+                <NavLink to={link.link}>{link.name}</NavLink>
               </li>
             ))}
           </ul>
