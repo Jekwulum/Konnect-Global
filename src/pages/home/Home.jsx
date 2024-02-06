@@ -105,7 +105,7 @@ const Home = () => {
         </div>
 
         <div style={{ backgroundImage: `url(${planeImg})` }} className='flex items-center justify-center m-auto text-center img-bg font-Montserrat'>
-          <p className='flex items-center w-full h-full px-8 text-xs text-center text-white bg-custom-blue/85 md:text-2xl md:px-32'>
+          <p className='flex items-center justify-center w-full h-full px-8 text-xs text-center text-white bg-custom-blue/85 md:text-2xl md:px-32'>
             Konnect Global stands as a premier global provider of transport and logistics solutions, offering seamless connectivity and innovative services to enhance supply chain efficiency for businesses across the globe.</p>
         </div>
 

@@ -2,6 +2,7 @@ import React from 'react'
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import AboutPhoto from '../../assets/img/about-photo.jpg';
 import OwnersPhoto from '../../assets/img/ceo-photo.png';
 
 const About = () => {
@@ -10,7 +11,10 @@ const About = () => {
       <Header />
 
       <div className='mt-20 md:mt-24 font-Montserrat'>
-        <div className='flex flex-col items-start justify-center gap-5 px-4 mb-4 md:flex-row'>
+        <div style={{ backgroundImage: `url(${AboutPhoto})` }} className='flex items-center justify-center m-auto text-center img-bg font-Montserrat'>
+          <p className='flex items-center justify-center w-full h-screen mt-5 text-3xl text-center md:text-4xl text-custom-light'>About Us</p>
+        </div>
+        <div className='flex flex-col items-start justify-center gap-5 px-4 mb-4 md:mt-10 md:flex-row'>
           <div className='w-64 bg-custom-green h-72 md:w-full text-custom-light'>
             <img src={OwnersPhoto} alt="" className='w-full h-48' loading='lazy' />
             <p className='pt-4 text-sm text-center'>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, dolorem.</p>
@@ -24,11 +28,11 @@ const About = () => {
 
             <p className='mt-5 mb-3'>
               KonnectGlobal is the driving force behind global logistics. With an unwavering dedication to excellence, efficiency, and reliability, we adeptly navigate the intricacies of transportation to provide seamless solutions for businesses across the globe. Our team embodies unparalleled expertise, unwavering dedication, and an unyielding determination to surpass expectations.
-              
+
               <p className='mt-2'>We ensure that every shipment, every client, and every milestone is met with utmost precision and meticulous care.</p>
             </p>
 
-            <p className='text-3xl font-GreatVibes'>John Doe</p>
+            <p className='text-3xl font-GreatVibes text-custom-green'>John Doe</p>
           </div>
         </div>
 
