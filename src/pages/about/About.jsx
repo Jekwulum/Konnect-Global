@@ -12,7 +12,7 @@ const About = () => {
 
       <div className='mt-20 md:mt-24 font-Montserrat'>
         <div style={{ backgroundImage: `url(${AboutPhoto})` }} className='flex items-center justify-center m-auto text-center img-bg font-Montserrat'>
-          <p className='flex items-center justify-center w-full h-screen mt-5 text-3xl text-center md:text-4xl text-custom-light'>About Us</p>
+          <p className='flex items-center justify-center w-full h-screen mt-5 text-3xl text-center md:text-4xl text-custom-light bg-black/50'>About Us</p>
         </div>
         <div className='flex flex-col items-start justify-center gap-5 px-4 mb-4 md:mt-10 md:flex-row'>
           <div className='w-64 bg-custom-green h-72 md:w-full text-custom-light'>
