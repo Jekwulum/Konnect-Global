@@ -14,10 +14,10 @@ const About = () => {
         <div style={{ backgroundImage: `url(${AboutPhoto})` }} className='flex items-center justify-center m-auto text-center img-bg font-Montserrat'>
           <p className='flex items-center justify-center w-full h-screen mt-5 text-3xl text-center md:text-4xl text-custom-light bg-black/50'>About Us</p>
         </div>
-        <div className='flex flex-col items-start justify-center gap-5 px-4 mb-4 md:mt-10 md:flex-row'>
-          <div className='w-64 bg-custom-green h-72 md:w-full text-custom-light'>
+        <div className='flex flex-col items-start justify-center gap-5 px-4 mt-4 mb-4 md:mt-10 md:flex-row'>
+          <div className='w-64 h-72 bg-custom-green md:w-full text-custom-light'>
             <img src={OwnersPhoto} alt="" className='w-full h-48' loading='lazy' />
-            <p className='pt-4 text-sm text-center'>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, dolorem.</p>
+            <p className='pt-4 text-sm text-center'><span className='font-BizUdmincho text-xl'>"</span>Konnect Global: Transforming logistics, empowering global success.</p>
           </div>
 
           <div className='h-full'>

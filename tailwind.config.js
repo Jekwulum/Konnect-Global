@@ -16,6 +16,7 @@ module.exports = {
       Montserrat: ['Montserrat', 'sans-serif'],
       Montez: ['Montez', 'cursive'],
       GreatVibes: ['Great Vibes', 'cursive'],
+      BizUdmincho: ['BIZ UDMincho', 'serif'],
       // Lato: ['Lato', 'sans-serif'],
     }
   },
