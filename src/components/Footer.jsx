@@ -5,7 +5,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   const navLinks = [
     { name: 'Home', link: '/' },
-    { name: 'Services', link: '/services' },
+    // { name: 'Services', link: '/services' },
     { name: 'About', link: '/about' },
     { name: 'Contact', link: '/contact' },
   ];
