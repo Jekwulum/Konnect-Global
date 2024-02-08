@@ -10,11 +10,11 @@ const HomeMessageForm = () => {
 
       <div className='mt-5 md:mt-10'>
         <div className='flex justify-between mb-5 space-x-5'>
-          <input type="text" placeholder='Name' className='w-full h-8 p-2 outline-none text-custom-green' />
-          <input type="email" placeholder='Email' className='w-full h-8 p-2 outline-none text-custom-green' />
+          <input type="text" placeholder='Name*' className='w-full h-8 p-2 outline-none text-custom-green' />
+          <input type="email" placeholder='Email*' className='w-full h-8 p-2 outline-none text-custom-green' />
         </div>
 
-        <textarea type="text" placeholder='Message' className='w-full h-64 p-2 outline-none text-custom-green' />
+        <textarea type="text" placeholder='Message*' className='w-full h-64 p-2 outline-none text-custom-green' />
 
         <button className='w-24 h-12 p-2 mt-5 text-center transition-all duration-500 ease-in-out text-custom-light bg-custom-green hover:text-custom-green hover:bg-custom-light'>Submit</button>
       </div>
