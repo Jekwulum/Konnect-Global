@@ -46,7 +46,7 @@ const Header = () => {
         <div className=''>
           <ul className=''>
             {navLinks.map((link) => (
-              <li className='my-2 transition-all duration-500 hover:text-custom-green' key={link.name}>
+              <li className='my-4 transition-all duration-500 hover:text-custom-green' key={link.name}>
                 <NavLink to={link.link}>{link.name}</NavLink>
               </li>
             ))}
